@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> 
+  
+    <!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     
+    <!-- Responsive Image maps -->
+    <!-- Allows image maps to be used in a responsive design by recalculating the area coordinates  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js" integrity="sha512-eZB7hQa0bRlrKMQ2njpP0d/Klu6o30Gsr8e5FUCjUT3fSlnVkm/1J14n58BuwgaMuObrGb7SvUfQuF8qFsPU4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>ImageMaps</title>
+    
+    <style>
+        img {
+          border: 8px solid #555;
+        }
+        </style>
+</head>
+
+<body>
+
+    <div class="mt-4 p-5 bg-warning text-white rounded">
+        <h1 style="text-align:center">Licenciatura em Saúde Digital</h1>
+        <h2 style="text-align:center">Descobre a tua Licenciatura!</h2>
+    </div>  
+    <br>
+    <br>
+
+<!-- Imagem com a definição de ImageMaps -->
+    <img src="./images/SaudeDigital.png" usemap ="#workmap" alt="SaudeDigital"
+             class="img-fluid img-responsive rounded  mx-auto d-block">  
+    
+    <map name="workmap">
+        <area shape="rect" coords="965,331,1067,393" style="width: 100%;" alt="objetivos" 
+              href= "#" id = "objetivos">
+        <area shape="circle" coords="803,633, 25" style="width: 100%;" alt="saidasProf" 
+              href= "#" id = "saidasProf">
+        <area shape="poly" coords="272,273, 571, 302, 568, 463, 496, 457" style="width: 100%;" alt="videoPromo" 
+              href= "#" id = "videoPromo">
+
+    </map>
+
+    <!-- Modal para o texto ou Imagem  -->
+    <dialog id="dlgContent">
+        <img id="imgDialog" style="width:50%" src="" alt="">  
+        <p id="txtDialog1"></p>      
+        <p id="txtDialog2"></p>      
+        <p id="txtDialog3"></p>      
+        <p id="txtDialog4"></p>      
+        <br>
+        <button id="btnClosedlgContent">FECHAR</button>
+    </dialog>
+
+
+    <!-- Modal para Vídeo  -->
+    <dialog id = "dlgVideo">
+        <iframe 
+            id="iframeVideo" 
+            title ="youtube video"
+            width="640" 
+            height="360" 
+            allow="autoplay; clipboard-write;picture-in-picture" 
+            src="">
+        </iframe>
+        <br>
+            <button id="btnClosedlgVideo">FECHAR</button>
+   </dialog>
+
+
+
+
+    <!-- javascript file -->
+    <script  src="index.js"></script>
+</body>
+</html>
