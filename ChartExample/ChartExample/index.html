@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <!-- Bootstrap core CSS -->
+    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+
+    <title>My Chart.js Example</title>
+</head>
+<body>
+
+    <h1>Some Chart Examples...</h1>
+    <h2>Using chart.js library: https://www.chartjs.org/</h2>
+    <hr>
+
+    <div class="chart-container" style="position:relative">
+        <div class="row" >
+            <div class="col-md-2"></div>
+            <div class=" col-xs-10 col-md-5">
+                <canvas id="myChart1" style="width:100%;max-width:400px; max-height:400px;"></canvas>
+            </div>
+            <div class="col-xs-10 col-md-5">
+                <canvas id="myChart2" style="width:100%;max-width:400px; max-height:400px;"></canvas>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-10 col-md-5">
+                <canvas id="myChart3" style="width:100%;max-width:400px; max-height:400px;"></canvas>
+            </div>
+            <div class="col-xs-10 col-md-5">
+                <canvas id="myChart4" style="width:100%;max-width:400px; max-height:400px;"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- CDN.js da biblioteca Chart.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+
+    <!-- javascript file -->
+    <script  src="index.js"></script>
+</body>
+</html>
